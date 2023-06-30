@@ -21,7 +21,7 @@ body {
 }
 
 .img-container img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -45,26 +45,34 @@ body {
 }
 
 .content-container {
-  color:white;
+  color: rgb(185, 185, 185);
+  font-weight: 800;
   background-color: #000000;
-  border: 5px solid rgb(69, 69, 70);
+  border: 5px solid rgb(47, 47, 48);
   padding: 20px;
+  border-top: none;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
  
 }
 
 .form-container {
   background-color: #0073df;
   padding: 20px;
-  border: 5px solid rgb(69, 69, 70);
+  border: 5px solid rgb(47, 47, 48);
+  border-top: none;
+  border-bottom: none;
  
 }
 
 .button-container {
   padding-top: 25px;
-  color: white;
+  color: rgb(185, 185, 185);
   background-color: #000000;
-  border: 5px solid rgb(69, 69, 70);
+  border: 5px solid rgb(47, 47, 48);
   text-align: center;
+  border-bottom: none;
 }
 .input {
   display: grid;
@@ -90,4 +98,43 @@ body {
 
 a {
   color: #0073df;
+}
+
+.create-account-button {
+  width: 25%;
+  height: 20%;
+  background-color: #0073df;
+  color: #000000;
+  font-size: 100%;
+  border: 5px solid rgb(47, 47, 48); 
+}
+
+.create-account-button:hover {
+  color: #0073df;
+  background-color: rgb(47, 47, 48);
+  border: 5px solid white;
+  cursor: pointer;
+}
+
+.paragraph {
+  text-indent: 5%;
+}
+:user-invalid {
+  border-color: red;
+}
+
+input:user-valid {
+  border-color: green;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
 }

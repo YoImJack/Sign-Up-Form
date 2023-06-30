@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+   <script src="myScript.js"></script> 
   <title>Document</title>
 </head>
 <body>
@@ -11,11 +12,12 @@
     <div class="img-container">
       <img src="fishing.png" alt="a peaceful afternoon of fishing">
       <h1 class="company">CastCraft Lures™</h1>
+      <div class="image-credit">Image created using Midjourney</div>
     </div>
     <div class="right-container">
       <div class="content-container">
         <div class="paragraph">
-          <p>Join CastCraft Lures today to unlock exclusive benefits! Sign up now and enjoy special deals on our premium lures, while earning points towards free merchandise with every purchase. 
+          <p> Join CastCraft Lures today to unlock exclusive benefits! Sign up now and enjoy special deals on our premium lures, while earning points towards free merchandise with every purchase. 
             Experience the thrill of fishing with our high-quality products, and get rewarded for your loyalty. Start reeling in the rewards by becoming a part of the CastCraft Lures community!</p>
         </div>
       </div>
@@ -29,32 +31,32 @@
             </div>
             <div class="input-group">
               <label for="surname">Last Name</label>
-              <input type="text" id="surname" name="surname">
+              <input type="text" id="surname" name="surname" required>
             </div>
             <div class="input-group">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" required>
             </div>
             <div class="input-group">
               <label for="phone-number">Phone Number</label>
-              <input type="tel" name="phone-number" id="phone-number">
+              <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{10}" minlength="10" maxlength="10" required>
             </div>
             <div class="input-group">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password">
+              <input type="password" name="password1" id="password1" required>
             </div>
             <div class="input-group">
               <label for="confirm">Confirm Password</label>
-              <input type="password" name="confirm" id="confirm">
+              <input type="password" name="password2" id="password2" required>
             </div>    
           </div>
-        </form>
       </div>
       <div class="button-container">
-        <button class="create-account-button">Create Account</button>
-        <p>already have an account? <a href="">Login</a></p>
+        <button class="create-account-button" type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </div>
+</form>
 </body>
 </html>
