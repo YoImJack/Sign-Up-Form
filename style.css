@@ -1,3 +1,93 @@
+@font-face {
+  font-family: myFont;
+  src: url(goodfont.ttf);
+}
+
 body {
-    color:red;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
+ 
+}
+
+.img-container {
+  position: relative;
+  grid-column: 1;
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.company {
+  font-family: myFont;
+  font-size: 50px;
+  color: rgb(15, 105, 209);
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(228, 223, 223, 0.582);
+}
+
+.right-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Divide the right container into three equal rows */
+}
+
+.content-container {
+  color:white;
+  background-color: #000000;
+  border: 5px solid rgb(69, 69, 70);
+  padding: 20px;
+ 
+}
+
+.form-container {
+  background-color: #0073df;
+  padding: 20px;
+  border: 5px solid rgb(69, 69, 70);
+ 
+}
+
+.button-container {
+  padding-top: 25px;
+  color: white;
+  background-color: #000000;
+  border: 5px solid rgb(69, 69, 70);
+  text-align: center;
+}
+.input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input-group label {
+  text-align: center;
+}
+
+.input-group input {
+  width: 100%;
+  margin-right: 10px;
+}
+
+a {
+  color: #0073df;
 }
